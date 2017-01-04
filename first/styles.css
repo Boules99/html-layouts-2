@@ -1,0 +1,88 @@
+body{
+  box-sizing: border-box;
+}
+
+p { /*Lorem ipsum text*/
+  font-family: "Helvetica", sans-serif;
+  font-size: 1.75em;
+}
+
+/*************BOX SIZES**************/
+.med {
+  width: calc(95%/3);
+  height: 275px;
+}
+
+.width13 {
+  width: calc(100%/3);
+}
+
+.width23 {
+  width: calc(2*(100%/3));
+}
+
+.tall {
+  height: 500px;
+}
+
+.short {
+  height: 200px;
+}
+
+.mini{
+  width: 66%;
+}
+
+
+/**********BOX PLACEMENT*************/
+.container{
+  display: flex;
+  flex-flow: column;
+  margin: 50px 35px 35px 35px;
+}
+
+.first-row { /*The three rectangles distributed across the top of the page*/
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.second-row{ /*Div containing Lorem ipsum text*/
+  margin: 50px 0;
+}
+
+.third-row{ /*Two largest color blocks*/
+  display: flex;
+  flex-flow: row;
+}
+
+.fourth-row{ /*Rectangles across the bottom of the page*/
+  display: flex;
+  flex-flow: row;
+  margin-top: 35px;
+}
+
+.outer-box{
+  position: relative;
+}
+
+.inner-box {
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0
+}
+
+/************COLORS************/
+.red{
+  background-color: #D0021B;
+}
+
+.blue{
+  background-color: #4A90E2
+}
+
+.grey{
+  background-color: #4A4A4A
+}
